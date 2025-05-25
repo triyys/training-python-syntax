@@ -2,6 +2,7 @@
 # Hãy tìm giá trị nguyên dương k lớn nhất sao cho S(k) < n.
 # Trong đó chuỗi k được định nghĩa như sau: S(k) = 1 + 2 + 3 + … + k
 
+# Tách dòng ra.
 def max_k(n: int) -> int:
     k = 1
     current_sum = 1

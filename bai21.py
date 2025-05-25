@@ -1,5 +1,6 @@
 # Bài 21: Cho 2 số nguyên dương a và b. Hãy tìm ước chung lớn nhất và tìm bội chung nhỏ nhất của 2 số này
 
+# Vui ha cái làm vòng for thì mày làm đệ quy. Khó hiểu GenZ.
 def my_gcd(a, b):
     if b == 0:
         return a

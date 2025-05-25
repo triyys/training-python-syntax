@@ -6,6 +6,8 @@ def odd_divisor_count(n: int) -> int:
     for i in range(3, n + 1, 2):
         if n % i == 0:
             result += 1
+
+    # Tách dòng ra.
     return result
 
 input_n = 9

@@ -1,5 +1,6 @@
 # Bài 16: Tìm chữ số nhỏ nhất của số nguyên dương n
 
+# Tốt
 def min_digit(n: int) -> int:
     result = 10
 

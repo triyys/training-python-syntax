@@ -1,6 +1,7 @@
 # Bài 27: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
 from typing import List
 
+# Điều gì xảy ra khi so sánh 2 số thực?
 def max_real(l: List[float]) -> float:
     result = l[0]
 

@@ -1,5 +1,7 @@
 # Bài 12: Hãy tính tổng các chữ số của số nguyên dương n
 
+# Tốt.
+# Thử sử dụng hàm divmod 
 def sum_digit(n: int) -> int:
     result = 0
 

@@ -10,6 +10,7 @@ def calculate_triangle_type(a: float, b: float, c: float) -> str:
     if a == b or b == c or a == c:
         return 'Isosceles triangle'
 
+    # Code dị vậy
     sorted_edges = [a, b, c]
     sorted_edges.sort()
     if sorted_edges[0] ** 2 + sorted_edges[1] ** 2 == sorted_edges[2] ** 2:

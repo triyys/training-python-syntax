@@ -7,6 +7,8 @@ MONTH_TYPE = {
     'FEBRUARY': [2],
 }
 
+# Đâu có cần phải đặt thêm MONTH_TYPE làm gì cho dài dòng.
+# Rớt mất case năm nhuận.
 def next_date(day: int, month: int, year: int) -> Tuple[int, int, int]:
     if month in MONTH_TYPE['FULL']:
         if day + 1 > 31:

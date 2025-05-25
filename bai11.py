@@ -2,7 +2,10 @@
 import math
 from utils import massive_input
 
+# số chính phương tiếng anh là perfect square
 def is_square_number(n: int) -> bool:
+    # Ngon, có đọc chú ý của nó là hàm này chỉ có trong Python 3.8 trở lên không?
+    # Gần 30% code python trên thế giới vẫn đang sử dụng Python < 3.8
     # https://www.w3schools.com/python/ref_math_isqrt.asp
     return math.isqrt(n) ** 2 == n
 

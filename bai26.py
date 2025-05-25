@@ -11,6 +11,8 @@
 # ********* 4   0   9
 # 012345678
 
+# Hàm này đúng.
+# Thử viết dùng vòng for và lệnh print xem sao
 def generate_equilateral_triangle(h: int) -> str:
     return '\n'.join([' ' * (h - i + 1) + '*' * (2 * i + 1) + ' ' * (h - i + 1) for i in range(h)])
 

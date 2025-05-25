@@ -1,6 +1,7 @@
 # Bài 8: Tìm ước số lẻ lớn nhất của số nguyên dương n
 from utils import massive_input
 
+# tach dòng ra.
 def greatest_odd_divisor(n: int) -> int:
     # Reverse range from n to 2
     for i in range(n, 0, -1):

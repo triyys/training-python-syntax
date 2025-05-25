@@ -2,7 +2,7 @@
 
 def digit_count(n: int) -> int:
     result = 0
-    mutable_n = n
+    mutable_n = n # Tạo ra cái này để làm gì
 
     while mutable_n > 0:
         result += 1

@@ -12,6 +12,7 @@ def sum_equation(n: int, x: int) -> int:
     result = 1
 
     for i in range(1, n + 1):
+        # sao không viết thành 1 dòng
         equation_result = x ** (i * 2) / factorial(i * 2)
         result += equation_result
 

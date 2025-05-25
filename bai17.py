@@ -1,5 +1,6 @@
 # Bài 17: Hãy kiểm tra số nguyên dương n có toàn chữ số lẻ hay không
 
+# Tách dòng ra
 def is_all_odd_digits(n: int) -> bool:
     while n > 0:
         if n % 2 == 0:

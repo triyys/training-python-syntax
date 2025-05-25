@@ -2,6 +2,7 @@
 from typing import Tuple
 import calendar
 
+# Sao lại chơi thư viện rồi
 def previous_date(day: int, month: int, year: int) -> Tuple[int, int, int]:
     if day - 1 == 0:
         if month - 1 == 0:

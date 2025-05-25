@@ -1,6 +1,8 @@
 # Bài 2: Tính S(n) = 1 + 1.2 + 1.2.3 + … + 1.2.3….N
 from utils import massive_input
 
+# Viết gớm quá
+
 def sum_factorial(n: int) -> int:
     if n == 0 or n == 1:
         return 1

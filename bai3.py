@@ -1,5 +1,6 @@
 # Bài 3: Tính S(n) = x + x^2 + x^3 + … + x^n
 
+# Làm phức tạp quá, gọi pow là được
 def sum_exponential(n: int, x: int) -> int:
     if n == 0:
         return 1

@@ -1,7 +1,7 @@
 # Bài 15: Tìm chữ số lớn nhất của số nguyên dương n
 
 def max_digit(n: int) -> int:
-    mutable_n = n // 10
+    mutable_n = n // 10 # Tạo ra cái này để làm gì
     result = n % 10
 
     while mutable_n > 0:
