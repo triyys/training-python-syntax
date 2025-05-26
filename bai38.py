@@ -4,10 +4,10 @@
 
 def is_power_of_two(n: int) -> bool:
     while n > 1:
-        if n % 2 == 1:
+        n, mod = divmod(n, 2)
+
+        if mod == 1:
             return False
-        else:
-            n = n // 2
 
     return True
 
