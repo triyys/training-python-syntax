@@ -1,6 +1,6 @@
 # Bài 41: Cho mảng 1 chiều các số nguyên.
 # Hãy viết hàm tìm bội chung nhỏ nhất của tất cả các phần tử trong mảng.
-import math
+
 def my_gcd(a: int, b: int) -> int:
     while b != 0:
         temp = a % b
