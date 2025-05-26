@@ -3,9 +3,9 @@
 def largest_distance(arr: list[float], x: float) -> float:
     result = arr[0]
 
-    for value in arr:
-        if abs(x - result) < abs(x - value):
-            result = value
+    for element in arr:
+        if abs(x - result) < abs(x - element):
+            result = element
 
     return result
 

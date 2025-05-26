@@ -4,7 +4,7 @@
 # => Tức là kiểm tra mảng chẵn hết
 
 def is_even_array(arr: list[int]) -> bool:
-    return all([value % 2 == 0 for value in arr])
+    return all([element % 2 == 0 for element in arr])
 
 input_arr = [2, 4, -6, 88, 24]
 print(is_even_array(input_arr))

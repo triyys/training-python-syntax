@@ -2,8 +2,8 @@
 # có tồn tại giá trị x chẵn nhỏ hơn 2004 hay không
 
 def is_valid_array(arr: list[int]) -> bool:
-    for value in arr:
-        if value % 2 == 0 and value < 2004:
+    for element in arr:
+        if element % 2 == 0 and element < 2004:
             return True
 
     return False

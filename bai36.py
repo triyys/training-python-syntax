@@ -12,9 +12,9 @@ def is_palindrome(n: int) -> bool:
     return n == reversed_n
 
 def find_palindrome(arr: list[int]) -> int:
-    for value in arr:
-        if is_palindrome(value):
-            return value
+    for element in arr:
+        if is_palindrome(element):
+            return element
 
     return -1
 

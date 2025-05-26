@@ -3,9 +3,9 @@
 def find_range(arr: list[float]) -> float:
     result = 0
 
-    for value in arr:
-        if abs(value) > result:
-            result = abs(value)
+    for element in arr:
+        if abs(element) > result:
+            result = abs(element)
 
     return result
 
