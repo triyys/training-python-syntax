@@ -14,10 +14,8 @@ def use_peewee():
         print('Tables created successfully!')
         # random_product()
         # random_order()
-        products1 = get_products_by_quantity(15)
-        [print(f'{product.id}: {product.name} {product.price}') for product in products1]
-        products2 = get_products_by_category(3)
-        [print(f'{product.id}: {product.name} {product.price}') for product in products2]
+        # get_products_by_quantity()
+        # get_products_by_category()
     except OperationalError as e:
         print(f'Failed to connect to DB: {e}')
     finally:
@@ -26,18 +24,18 @@ def use_peewee():
             print('Database connection closed.')
 
 
-def get_products_by_quantity(quantity: int) -> list[Product]:
-    query = Product.select().where(Product.quantity == quantity)
+def get_products_by_quantity() -> None:
+    query = Product.select().where(Product.quantity == 15)
 
-    return [product for product in query]
+    [print(f'{product.id}: {product.name} {product.price}') for product in query]
 
-def get_products_by_category(category_id: int) -> list[Product]:
+def get_products_by_category() -> None:
     query = (Product
              .select(Product, Category)
              .join(Category)
-             .where(Product.category_id == category_id))
+             .where(Product.category_id == 3))
 
-    return [product for product in query]
+    [print(f'{product.id}: {product.name} {product.price}') for product in query]
 
 if __name__ == '__main__':
     use_peewee()
